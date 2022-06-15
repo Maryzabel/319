@@ -1,0 +1,19 @@
+Realice la serie Fibonacci estructurada y recursiva de tres términos en f#
+
+open System
+let fibo n = 
+    let mutable a = -1
+    let mutable b = 1
+    let mutable c = 0
+
+        for i in 1 .. (n + 1) do {
+            let s = a + b + c
+            a <- b
+            b <- c
+            c <- s
+        }
+let run = fibo 10 |> Seq.iter (printfn "%d")
+
+ 
+[<EntryPoint>]
+let main argv = 
