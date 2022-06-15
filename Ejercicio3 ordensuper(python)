@@ -1,0 +1,17 @@
+Resuelva el ejercicio 1 utilizando funciones de orden superior  en python
+
+def fibo_recur(n):
+
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    if n == 2:
+        return 1
+    return fibo_recur(n-1) + fibo_recur(n-2)+ fibo_recur(n-3)
+
+def fibonacci(funcion, n):
+    return funcion(n)
+   
+
+print(fibonacci(fibo_recur, 9))
