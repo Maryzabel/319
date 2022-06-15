@@ -1,0 +1,13 @@
+Realice la serie Fibonacci estructurada y recursiva de tres términos en Scala
+
+object Fibonacci {
+    def fibo(n: Int): Int = 
+	    
+        if (n < 3) 1 
+              else fibo(n - 1) + fibo(n - 2) + fibo( n - 3) 
+    def main(args: Array[String]) :Unit = {
+        for {i <- List.range(1, 8)} 
+            yield { print(fibo(i) + ", ") }
+
+    }
+}
