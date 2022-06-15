@@ -1,0 +1,30 @@
+Realice la serie Fibonacci estructurada y recursiva de tres términos Python
+
+Fibonacci recursivo
+def fibo_estructurada(n):
+    
+        a=-1
+        b=1
+        c=0
+        for i in range(n+1):
+            s=a+b+c
+            print (s)
+            a=b
+            b=c
+            c=s        
+fibo_estructurada(7)
+
+Fibonacci estructurada
+
+def fibo_recur(n):
+
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    if n == 2:
+        return 1
+    return fibo_recur(n-1) + fibo_recur(n-2)+ fibo_recur(n-3)
+    print(n)
+
+print(fibo_recur(8))
