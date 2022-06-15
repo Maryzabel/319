@@ -1,0 +1,10 @@
+1.	Realice la serie Fibonacci estructurada y recursiva de tres términos en Haskell
+
+fiborec :: Integer -> Integer
+fiborec 0 = 0
+fiborec 1 = 1
+fiborec 2 = 1
+fiborec n = fiborec (n-1) + fiborec (n-2) + fiborec (n-3)
+
+main = do
+  print(fiborec(7))
