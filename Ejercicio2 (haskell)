@@ -1,0 +1,6 @@
+Resuelva el ejercicio 1 utilizando funciones de  orden superior en Haskell
+
+
+factorial :: (Integral a) => a -> a
+factorial 0 = 1
+factorial n = n * factorial (n - 1)
